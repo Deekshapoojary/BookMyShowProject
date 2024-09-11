@@ -1,0 +1,100 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex-container{
+    border: 1px solid rgba(116, 109, 109, 0.5);
+    height: auto;
+    width: 25vw;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+.input-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+}
+label{
+    width: 30%; 
+    text-align: right; 
+    padding-right: 10px;
+}
+input{
+    width: 60%; 
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button{
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(32, 163, 245);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(32, 163, 245, 0.8);
+}
+p{
+    margin-top: 20px;
+}
+#signup{
+    height: 5vh;
+}
+#signup p{
+    margin-top: 10px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(58, 58, 248);
+    cursor: pointer;
+}
+#email{
+    width: 100%;
+}
+#trouble{
+    font-weight: bold;
+    font-size: large;
+}
+#link-text{
+    color: rgb(0, 0, 0, 0.5);
+}
+input[type="checkbox"]{
+    width: 10%; 
+}
+.checkbox-group {
+    display: flex;
+    flex-direction: column; 
+    margin-left: 5px; 
+}
+.checkbox-item {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 5px;
+}
+#register-container{
+    height: 110vh;
+    width: 35vw;
+}
+#register-container img{
+    margin-bottom: 20px;
+}
+#login img{
+    margin-bottom: 20px;
+}
+.radiobutton-group {
+    display: flex;
+    align-items: center;
+}
+.radiobutton-group input {
+    margin-right: 5px;
+    margin-left: 15px; 
+}
+

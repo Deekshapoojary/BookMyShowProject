@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    
+    <form class="form" action="" method="post">
+        <div id="register-container" class="flex-container">
+            <img src="Images/bookmyshow.png" alt="BookMyShowLogo"><br>
+            <div class="input-container">
+                <label for="firstName">First Name: </label> 
+                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" autocomplete="" required>
+            </div>
+            <div class="input-container">
+                <label for="lastName">Last Name: </label> 
+                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" autocomplete="" required>
+            </div>
+            <div class="input-container">
+                <label for="dateOfBirth">Date of Birth: </label> 
+                <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+            </div>
+            <div class="input-container">
+                <label for="age">Age: </label> 
+                <input type="number" id="age" name="age" placeholder="Enter your age" required>
+            </div>
+            <div class="input-container">
+                <label for="gender">Gender :</label>
+                <div class="radiobutton-group">
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="others">
+                        <label for="others">Others</label>
+                </div>
+            </div>
+            <div class="input-container">
+                <label for="favouriteGenre">Favourite Genre: </label> 
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="horror" name="favouriteGenre" value="horror">
+                            <label for="horror">Horror</label>
+                            <input type="checkbox" id="action" name="favouriteGenre" value="action">
+                            <label for="action">Action</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="drama" name="favouriteGenre" value="drama">
+                            <label for="drama">Drama</label>
+                            <input type="checkbox" id="scifi" name="favouriteGenre" value="scifi">
+                            <label for="scifi">Sci-Fi</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="fantasy" name="favouriteGenre" value="fantasy">
+                            <label for="fantasy">Fantasy</label>
+                            <input type="checkbox" id="love" name="favouriteGenre" value="love">
+                            <label for="love">Love</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="thriller" name="favouriteGenre" value="thriller">
+                            <label for="thriller">Thriller</label>
+                            <input type="checkbox" id="others" name="favouriteGenre" value="others">
+                            <label for="others">Others</label>
+                        </div>
+                    </div>
+            </div>
+            <div class="input-container">
+                <label for="email">Email: </label>
+                <input type="email" id="reg-email" name="email" placeholder="abc@gmail.com" autocomplete="" required>
+            </div>
+            <div class="input-container">
+                <label for="phoneno">Phone No: </label>
+                <input type="tel" id="phoneno" name="phoneno" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="Enter your 10 digit phone number" autocomplete="" required>
+            </div>
+            <div class="input-container">
+                <label for="password">Password: </label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-container">
+                <label for="confirmPassword">Confirm Password: </label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+            <button type="submit">Register</button><br>
+        </div>
+    </form>
+
+</body>
+</html>

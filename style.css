@@ -1,100 +1,266 @@
-.form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.flex-container{
-    border: 1px solid rgba(116, 109, 109, 0.5);
-    height: auto;
-    width: 25vw;
-    text-align: center;
-    margin-bottom: 10px;
-    padding: 20px;
-}
-.input-container{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 15px;
-}
-label{
-    width: 30%; 
-    text-align: right; 
-    padding-right: 10px;
-}
-input{
-    width: 60%; 
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-button{
-    padding: 10px 20px;
-    border: none;
-    background-color: rgb(32, 163, 245);
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-}
-button:hover{
-    background-color: rgba(32, 163, 245, 0.8);
-}
-p{
-    margin-top: 20px;
-}
-#signup{
-    height: 5vh;
-}
-#signup p{
-    margin-top: 10px;
-}
-a{
-    text-decoration: none;
-}
-a:hover{
-    color: rgb(58, 58, 248);
-    cursor: pointer;
-}
-#email{
-    width: 100%;
-}
-#trouble{
-    font-weight: bold;
-    font-size: large;
-}
-#link-text{
-    color: rgb(0, 0, 0, 0.5);
-}
-input[type="checkbox"]{
-    width: 10%; 
-}
-.checkbox-group {
-    display: flex;
-    flex-direction: column; 
-    margin-left: 5px; 
-}
-.checkbox-item {
-    display: flex;
-    align-items: center; 
-    margin-bottom: 5px;
-}
-#register-container{
-    height: 110vh;
-    width: 35vw;
-}
-#register-container img{
-    margin-bottom: 20px;
-}
-#login img{
-    margin-bottom: 20px;
-}
-.radiobutton-group {
-    display: flex;
-    align-items: center;
-}
-.radiobutton-group input {
-    margin-right: 5px;
-    margin-left: 15px; 
+*{
+    margin:0%;
+    padding:0%;
+    font-family: "Mulish", sans-serif;
 }
 
+
+/* .........first nav....... */
+
+
+
+.first-nav{
+    display:flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 1px;
+    color:black;
+    background-color:rgba(28, 50, 144, 0.083) ;
+}
+
+.first-nav .left{
+    display:flex;
+    margin-top: 16px;
+}
+
+.first-nav .right{
+    display:flex;
+    margin-top: 16px;
+}
+
+.left img{
+     width:13%;
+     margin-top: -9px;
+}
+
+
+.left input{
+    margin-inline: 15px;
+    padding:6px;
+    width: 600px;
+    height: 20px;
+    border:none;
+    outline:none;
+    text-align: center;
+    margin-top: 16px;
+    border-radius: 2px;
+
+}
+
+.right p{
+    margin-inline: 22px;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.right button{
+    margin-inline: 22px;
+    width:80px;
+    height:27px;
+    border:none;
+    border-radius: 2px;
+    background-color: rgb(175, 41, 63);
+    color: white;
+    margin-top: 20px;
+}
+
+
+.right i{
+    margin-inline: 22px;
+    font-size: 22px;
+    margin-top: 20px;
+    color: black;
+}
+
+/* ................second nav............... */
+
+.sec-nav{
+    display:flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding:6px;
+    background-color:whitesmoke;
+    color:black;
+}
+
+.sec-nav .s-left{
+    display:flex;
+}
+
+.sec-nav .s-right{
+    display:flex;
+}
+
+.s-left p {
+    margin-inline-start: 16px;
+}
+
+.s-left p:hover{
+    color: rgb(156, 47, 65);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.s-right p:hover{
+    color: rgb(156, 47, 65);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.s-right p {
+    margin-inline-start: 16px;
+}
+
+/* ....................,main..................... */
+.main-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    gap:8px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.main img{
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.scroll-btn {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    border: none;
+    border-radius: 2px;;
+    padding: 10px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    z-index: 1;
+
+}
+
+.left1 {
+    left: 0;
+}
+
+.right1 {
+    right: 0; 
+}
+
+.scroll-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+/* ............................cards.......................... */
+
+.container h2{
+    text-align:center;
+    padding:22px;
+}
+
+.container .card{
+    display:flex;
+    justify-content: center;
+    gap:5px;
+    margin-top: 11px;
+
+}
+
+
+.card-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    margin:10px;
+   
+}
+
+.card-item img{
+    width: 220px;          
+    border-radius: 5px;
+
+}
+
+.card-item h2 {
+    margin-top: 1px;       
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: -12px;  
+}
+
+.card-item h4 {
+    font-weight: normal;  
+    margin-top: -5px;      
+    padding: 0;  
+    color: rgba(0, 0, 0, 0.5);         
+}
+
+
+
+
+.banner img{
+    width:100%;
+    margin-top: 30px;
+}
+
+
+
+.premiere{
+    background-color:rgb(8,8,19) ;
+    color:white;
+    padding:22px;
+    margin-top: 44px;
+
+}
+
+.premiere h2,h3{
+    margin-left: 28px;
+}
+
+.premiere .card{
+    display:flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.premiere .card-item h2{
+    margin-top: 15px;
+}
+
+.premiere .card-item h4{
+    margin-top: 18px;
+}
+
+/* .......................footer................... */
+
+.footer{
+    background-color: rgb(220, 210, 210);
+    padding:33px;
+    margin-top: 44px;
+}
+
+.footer img{
+    width:12%;
+    margin-left:44%;
+    border-top: 2px solid gray;
+}
+
+.footer .icon{
+    display:flex;
+    justify-content: center;
+    padding-top: 1px;
+    cursor: pointer;
+}
+
+.icon i{
+    font-size:25px;
+    margin-inline: 10px;
+    padding:5px;
+}

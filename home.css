@@ -1,0 +1,364 @@
+*{
+    margin:0%;
+    padding:0%;
+    font-family: "Mulish", sans-serif;
+}
+
+
+/* .........first nav....... */
+
+
+
+.first-nav{
+    display:flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 1px;
+    color:black;
+    background-color:rgba(28, 50, 144, 0.083) ;
+}
+
+.first-nav .left{
+    display:flex;
+    padding-left: 10px;
+    margin-top: 11px;
+}
+
+ .first-nav .left a img{
+    width: 150px;
+ }
+
+.first-nav .right{
+    display: flex;
+    align-items: center;
+    padding-right: 200px;
+
+}
+
+
+.right ul{
+    list-style-type: none;
+}
+
+.right a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.left img{
+     width:13%;
+     margin-top: -9px;
+}
+
+
+.left input{
+    margin-inline: 15px;
+    padding:6px;
+    width: 500px;
+    height: 20px;
+    border:none;
+    outline:none;
+    text-align: center;
+    margin-top: 16px;
+    border-radius: 2px;
+
+}
+
+.right ul li a{
+    margin-inline: 22px;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.right button{
+    margin-inline: 22px;
+    width:80px;
+    height:27px;
+    border:none;
+    border-radius: 2px;
+    background-color: rgb(175, 41, 63);
+    color: white;
+    margin-top: 6px;
+}
+
+
+.right i{
+    margin-inline: 22px;
+    font-size: 22px;
+    margin-top: 6px;
+    color: black;
+}
+
+/* ................second nav............... */
+
+.sec-nav{
+    display:flex;
+    justify-content: space-around;
+    padding:6px;
+    background-color:whitesmoke;
+    color:black;
+}
+
+.sec-nav .s-left,.sec-nav .s-right{
+    display:flex;
+    flex: 1;
+}
+
+.s-left a,.s-right a{
+    text-decoration: none;
+    color: black;
+}
+
+.s-left ul {
+    display: flex;
+    justify-content: center;
+    gap:12px;
+    padding-left: 80px;
+    list-style-type: none;
+}
+
+.s-right ul{
+    display:flex ;
+    justify-content: center;
+    gap:12px;
+    padding-left: 120px;
+    list-style-type: none;
+}
+
+.s-left a:hover{
+    color: rgb(156, 47, 65);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.s-right a:hover{
+    color: rgb(156, 47, 65);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.s-right ul {
+    margin-inline-start: 16px;
+}
+
+
+/* ..........................side nav................ */
+
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right:0;
+    background-color:white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.side-nav h2, .side-nav p {
+    color: black;
+    padding-left: 20px;
+}
+
+.side-nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color:black;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav a:hover {
+    color: rgb(156, 47, 65);
+}
+
+.side-nav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* When side-nav is open */
+.side-nav.open {
+    width: 280px;
+}
+
+.sign-up button{
+    margin-inline:1px;
+    width:200px;
+    height:33px;
+    border:none;
+    border-radius: 2px;
+    background-color: rgb(175, 41, 63);
+    color: white;
+    margin-top: 6px;
+}
+
+
+/* ....................,main..................... */
+.main-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    gap:8px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.main img{
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.scroll-btn {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    border: none;
+    border-radius: 2px;;
+    padding: 10px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    z-index: 1;
+
+}
+
+.left1 {
+    left: 0;
+}
+
+.right1 {
+    right: 0; 
+}
+
+.scroll-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+/* ............................cards.......................... */
+
+.container h2{
+    text-align:center;
+    padding:22px;
+}
+
+.container .card{
+    display:flex;
+    justify-content: center;
+    gap:5px;
+    margin-top: 11px;
+
+}
+
+
+.card-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    margin:10px;
+   
+}
+
+.card-item img{
+    width: 220px;          
+    border-radius: 5px;
+
+}
+
+.card-item h2 {
+    margin-top: 1px;       
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: -12px;  
+}
+
+.card-item h4 {
+    font-weight: normal;  
+    margin-top: -5px;      
+    padding: 0;  
+    color: rgba(0, 0, 0, 0.5);         
+}
+
+
+
+
+.banner img{
+    width:100%;
+    margin-top: 30px;
+}
+
+
+
+.premiere{
+    background-color:rgb(8,8,19) ;
+    color:white;
+    padding:22px;
+    margin-top: 44px;
+
+}
+
+.premiere h2,h3{
+    margin-left: 28px;
+}
+
+.premiere .card{
+    display:flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.premiere .card-item h2{
+    margin-top: 15px;
+}
+
+.premiere .card-item h4{
+    margin-top: 18px;
+}
+
+/* .......................footer................... */
+
+.footer{
+    background-color: rgb(220, 210, 210);
+    padding:33px;
+    margin-top: 44px;
+}
+
+.footer img{
+    width:12%;
+    margin-left:44%;
+    border-top: 2px solid gray;
+}
+
+.footer .icon{
+    display:flex;
+    justify-content: center;
+    padding-top: 1px;
+    cursor: pointer;
+}
+
+.icon i{
+    font-size:25px;
+    margin-inline: 10px;
+    padding:5px;
+}
+
+.footer p {
+    margin: 0; 
+    font-size: 14px; 
+    justify-content: center;
+    margin-top: 5px;
+    margin-left:40%;
+}

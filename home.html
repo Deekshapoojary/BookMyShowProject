@@ -13,32 +13,56 @@
 <body>
     <nav class="first-nav">
         <div class="left"> 
-            <img src="img/logo.png" alt="logo">
+            <a href="home.html"><img src="img/logo.png" alt="logo"></a>
                 <input type="text" placeholder="search for movies,stream,Events,plays,sports,activities">      
         </div>
 
         <div class="right">
-            <p>Location</p>
-            <button>Sign Up</button>
-            <i class="fa-solid fa-bars"></i>
+            <ul>
+                <li><a href=next.html>Location</a></li>
+            </ul>
+                <a href="login.html"><button>Sign Up</button></a>
+                <i class="fa-solid fa-bars" id="menu-icon"></i>
         </div>
     </nav>
 
+     <!-- Side Navigation Bar -->
+     <div id="side-nav" class="side-nav">
+        <a href="javascript:void(0)" class="closebtn" id="close-btn">&times;</a>
+        <h2>Hey!</h2>
+    
+        <nav>
+            <div class="sign-up">
+                <a href="login.html"><button>Sign Up / Log in</button></a>
+                <a href="about.html"> About Us</a>
+                <a href="contact.html"> Contact us</a>
+            </div>
+        </nav>
+        
+
+    </div>
+
+
     <nav class="sec-nav">
         <div class="s-left">
-            <p>Movies</p>
-            <p>Stream</p>
-            <p>Events</p>
-            <p>Plays</p>
-            <p>Sports</p>
-            <p>Activities</p>
+            <ul>
+                <li><a href=next.html>Movies</a></li>
+                <li><a href=next.html>Stream</a></li>
+                <li><a href=next.html>Events</a></li>
+                <li><a href=next.html>Plays</a></li>
+                <li><a href=next.html>Sports</a></li>
+                <li><a href=next.html>Activities</a></li>   
+            </ul>
+            
         </div>
 
         <div class="s-right">
-            <p>ListYourShow</p>
-            <p>Corporates</p>
-            <p>Offers</p>
-            <p>Gift Cards</p>
+            <ul>
+                <li><a href=next.html>ListYourShow</a></li>
+                <li><a href=next.html>Corporates</a></li>
+                <li><a href=next.html>Offers</a></li>
+                <li><a href=next.html>Gift Cards</a></li>
+            </ul>    
         </div>
     </nav>
 
@@ -243,6 +267,10 @@
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-youtube"></i>
         </div>
+        <p>&copy; 2024 BookMyShow. All rights reserved.</p>
     </div>
+  
+<script src="script.js"></script>
+
 </body>
 </html>
